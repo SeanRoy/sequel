@@ -28,7 +28,7 @@ module Sequel
         def server_opts(o)
           o = super
           so = {}
-          [:db, :user, :password, :host, :port].each{|s| so[s] = o[s] if o.has_key?(s)}
+          [:db, :user, :username, :password, :host, :port].each{|s| so[s] = o[s] if o.has_key?(s)}
           so
         end
       
